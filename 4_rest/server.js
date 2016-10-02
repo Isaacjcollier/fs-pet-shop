@@ -35,6 +35,7 @@ app.post('/pets',function (request, response, next) {
     response.status(201).send(pets)
   }
 })
+
 // PUT a pet at a index that already exists (replace)
 app.put('/pets/:index', function (request, response) {
   let index = Number.parseInt(request.params.index);
